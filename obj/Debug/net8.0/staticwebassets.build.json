@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "fd22vQeY0ax6/FLxku5y4EGjGgWkxH9jtTTqEwjQ1oI=",
+  "Source": "TPLOCAL1",
+  "BasePath": "_content/TPLOCAL1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TPLOCAL1\\wwwroot",
+      "Source": "TPLOCAL1",
+      "ContentRoot": "C:\\Users\\Moi\\Desktop\\TPLOCAL1-base\\wwwroot\\",
+      "BasePath": "_content/TPLOCAL1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Moi\\Desktop\\TPLOCAL1-base\\wwwroot\\resources\\GroupeHN.png",
+      "SourceId": "TPLOCAL1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Moi\\Desktop\\TPLOCAL1-base\\wwwroot\\",
+      "BasePath": "_content/TPLOCAL1",
+      "RelativePath": "resources/GroupeHN#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lnubh3r8j6",
+      "Integrity": "D0MA0N4Fmg+5Xihh+k43ekZ85/+/uTIyf6o/mJICfBY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resources\\GroupeHN.png"
+    },
+    {
+      "Identity": "C:\\Users\\Moi\\Desktop\\TPLOCAL1-base\\wwwroot\\resources\\Index.css",
+      "SourceId": "TPLOCAL1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Moi\\Desktop\\TPLOCAL1-base\\wwwroot\\",
+      "BasePath": "_content/TPLOCAL1",
+      "RelativePath": "resources/Index#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afld2siv28",
+      "Integrity": "SkC+SdSc8F7obqRDcoES6nuY1O69F5QZLsFQ5eRt2Z4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resources\\Index.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "resources/GroupeHN.lnubh3r8j6.png",
+      "AssetFile": "C:\\Users\\Moi\\Desktop\\TPLOCAL1-base\\wwwroot\\resources\\GroupeHN.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D0MA0N4Fmg+5Xihh+k43ekZ85/+/uTIyf6o/mJICfBY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Apr 2025 08:43:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lnubh3r8j6"
+        },
+        {
+          "Name": "label",
+          "Value": "resources/GroupeHN.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D0MA0N4Fmg+5Xihh+k43ekZ85/+/uTIyf6o/mJICfBY="
+        }
+      ]
+    },
+    {
+      "Route": "resources/GroupeHN.png",
+      "AssetFile": "C:\\Users\\Moi\\Desktop\\TPLOCAL1-base\\wwwroot\\resources\\GroupeHN.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D0MA0N4Fmg+5Xihh+k43ekZ85/+/uTIyf6o/mJICfBY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Apr 2025 08:43:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D0MA0N4Fmg+5Xihh+k43ekZ85/+/uTIyf6o/mJICfBY="
+        }
+      ]
+    },
+    {
+      "Route": "resources/Index.afld2siv28.css",
+      "AssetFile": "C:\\Users\\Moi\\Desktop\\TPLOCAL1-base\\wwwroot\\resources\\Index.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "924"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SkC+SdSc8F7obqRDcoES6nuY1O69F5QZLsFQ5eRt2Z4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 10:43:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afld2siv28"
+        },
+        {
+          "Name": "label",
+          "Value": "resources/Index.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SkC+SdSc8F7obqRDcoES6nuY1O69F5QZLsFQ5eRt2Z4="
+        }
+      ]
+    },
+    {
+      "Route": "resources/Index.css",
+      "AssetFile": "C:\\Users\\Moi\\Desktop\\TPLOCAL1-base\\wwwroot\\resources\\Index.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "924"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SkC+SdSc8F7obqRDcoES6nuY1O69F5QZLsFQ5eRt2Z4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 10:43:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SkC+SdSc8F7obqRDcoES6nuY1O69F5QZLsFQ5eRt2Z4="
+        }
+      ]
+    }
+  ]
+}

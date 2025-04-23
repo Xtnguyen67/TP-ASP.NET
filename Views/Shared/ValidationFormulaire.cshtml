@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<HTML lang="fr">
+
+<head>
+    <link rel="stylesheet" href="~/resources/Index.css">
+
+    <title>HN - TP LOCAL </title>
+
+</head>
+
+
+<BODY>
+    <header>
+        <!--logo + titre -->
+        <img src="~/resources/GroupeHN.png" class="image"  alt=" GroupeHN" />
+        <h1> Formulaire TP HN avis</h1>
+    </header>
+
+    <!--bar de navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Fill in the form</a></li>
+            <li><a href="#">Avis list</a></li>
+        </ul>
+    </nav>
+
+    <h1> votre formulaire à été pris en compte</h1>
+
+	<form action="/Home/Index/ValidationFormulaire" method="POST">
+		<!--send data to # -->
+       
+       
+
+        <table border="1">
+
+            <tr>
+                <th colspan="2"> <h3>Informations personnelles</h3></th>
+            </tr>
+
+            <tr>
+                <td> <label for="Nom"> Nom </label></td>
+                <td> <input type="text" id="Nom" minlenght="2" maxlength="20" required><br /></td>
+            </tr>
+
+            <tr>
+                <td><label for="Prenom"> Prenom </label> </td>
+                <td> <input type="text" id="Prenom" minlenght="2" maxlength="20" required><br /></td>
+            </tr>
+
+            <tr>
+                <td> <label for="Sexe"> Sexe </label>  </td>
+                <td>
+                    <select name="Sexe" id="Sexe" required>
+
+                        <option value="" disabled selected> Selectionner un sexe </option>
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                        <option value="Autre">Autre</option>
+                        required
+                    </select><br />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Adresse"> Adresse </label> </td>
+                <td><input type="text" id="Adresse" minlenght="2" maxlength="60" required><br /></td>
+            </tr>
+            <tr>
+                <td> <label for="Code Postal"> Code Postal </label> </td>
+                <td> <input type="text" inputmode="numeric" id="Code Postal" minlenght="2" maxlength="5" min="0" max="99999" required> <br /></td>
+            </tr>
+
+            <tr>
+                <td> <label for="Ville"> Ville </label> </td>
+                <td>  <input type="text" id="Ville" minlenght="2" maxlength="20" required> <br /></td>
+            </tr>
+
+            <tr>
+                <td> <label for="Email"> Adresse mail </label>  </td>
+                <td> <input type="email" id="Email" minlenght="2" maxlength="60" required> <br /></td>
+            </tr>
+
+        </table>
+
+        <table border="1">
+            <tr>
+                <th colspan="2"> <h3>Informations formation suivie</h3></th>
+            </tr>
+            <tr>
+                <td> <label for="DateDebFormation"> Date début formation </label> </td>
+                <td> <input type="Date" id="DateDebFormation" min="2021-01-01" required /> <br /></td>
+            </tr>
+
+            <tr>
+                <td>  <label for="FSuivi"> Formation Suivie </label> </td>
+                <td>
+                    <select name="FSuivi" id="FSuivi" required>
+
+                        <option value="" disabled selected> Selectionner une formation </option>
+                        <option value="Cobol">Cobol</option>
+                        <option value="Cobol">C#</option>
+                        <option value="Cobol">Cobol+C#</option>
+                    </select> <br />
+                </td>
+            </tr>
+
+        </table>
+
+        <table border="1">
+            <tr>
+                <th colspan="2"> <h3>Avis sur la formation</h3></th>
+            </tr>
+            <tr>
+                <td> <label for="FormationCobol"> Formation Cobol </label> </td>
+                <td> <input type="text" id="FormationCobol#" maxlength="60" required> <br /></td>
+            </tr>
+            <tr>
+                <td>  <label for="FormationC#"> Formation C# </label> </td>
+                <td> <input type="text" id="FormationC#" maxlength="60" required> <br /></td>
+            </tr>
+        </table>
+
+        <input type="submit">
+
+    </form>
+</BODY>
+</HTML>

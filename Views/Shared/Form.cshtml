@@ -1,0 +1,127 @@
+﻿@model TPLOCAL1.Controllers.Avis
+
+<HTML lang="fr">
+
+<head>
+    <link rel="stylesheet" href="~/resources/Index.css">
+
+    <title>HN - TP LOCAL </title>
+
+</head>
+
+
+<BODY>
+    <header class="header">
+        <!--logo + titre -->
+        <img src="~/resources/GroupeHN.png" class="image"  alt=" GroupeHN" />
+        <h1> Formulaire TP HN avis</h1>
+    </header>
+
+    <!--bar de navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/Home/Index">Acceuil</a></li>
+            <li><a href="/Home/Index/AvisList">Avis list</a></li>
+        </ul>
+    </nav>
+
+  
+
+    <form asp-action="ValidationFormulaire" method="POST" class="formulaire">
+        <!--send data to  -->
+
+
+        <table border="1" class="tableau">
+        
+            <tr>
+              <th colspan="2"> <h3>Informations personnelles</h3></th>
+            </tr>
+
+            <tr>
+              <td> <label for="Nom"> Nom </label></td>
+                <td> <input type="text" id="Nom" minlenght="2" maxlength="20" required asp-for="Nom"><br /></td>
+            </tr>
+
+            <tr>
+              <td><label for="Prenom"> Prenom </label> </td>
+                <td>
+                    <input type="text" id="Prenom" minlenght="2" maxlength="20" required asp-for="Prenom"> <br/> </td>
+            </tr>
+
+           <tr>
+              <td> <label for="Sexe"> Sexe </label>  </td>
+              <td>
+                    <select name="Sexe" id="Sexe" required asp-for="Sexe" >
+
+                    <option value="" disabled selected> Selectionner un sexe </option>
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                    <option value="Autre">Autre</option>
+                        required
+                    </select><br />
+            </td>
+           </tr>
+          <tr>
+            <td><label for="Adresse"> Adresse </label> </td>
+                <td><input type="text" id="Adresse" minlenght="2" maxlength="60" required asp-for="Adresse"><br /></td>
+          </tr>
+        <tr>
+            <td> <label for="CodePostal"> Code Postal </label> </td>
+                <td> <input type="tel" inputmode="numeric" id="CodePostal" minlenght="2" maxlength="5" min="0" max="99999" required asp-for="CodePostal"> <br /></td>
+        </tr>
+
+        <tr>
+            <td> <label for="Ville"> Ville </label> </td>
+                <td>  <input type="text" id="Ville" minlenght="2" maxlength="20" required asp-for="Ville"> <br /></td>
+        </tr>
+
+        <tr>
+                <td> <label for="Email"> Adresse mail </label>  </td>
+                <td> <input type="email" id="Email" minlenght="2" maxlength="60" required asp-for="Email"> <br /></td>
+        </tr>
+
+      </table>
+
+        <table border="1">
+            <tr>
+                <th colspan="2"> <h3>Informations formation suivie</h3></th>
+            </tr>
+            <tr>
+                <td> <label for="DateDebFormation"> Date début formation </label> </td>
+                <td> <input type="Date" id="DateDebFormation" min="2021-01-01" required asp-for="DateDebFormation" /> <br /></td>
+            </tr>
+
+            <tr>
+                <td>  <label for="FSuivi"> Formation Suivie </label> </td>
+                <td>
+                    <select name="FSuivi" id="FSuivi" required asp-for="FSuivi">
+                       
+                         <option value="" disabled selected> Selectionner une formation </option>
+                         <option value="Cobol">Cobol</option>
+                         <option value="Cobol">C#</option>
+                         <option value="Cobol">Cobol+C#</option>
+                      </select> <br />
+                </td>
+            </tr>
+
+        </table>
+
+        <table border="1" class="tableau">
+            <tr>
+                <th colspan="2"> <h3>Avis sur la formation</h3></th>
+            </tr>
+            <tr>
+                <td> <label for="FormationCobol"> Formation Cobol </label> </td>
+                <td> <input type="text" id="FormationCobol" maxlength="60" required asp-for="FormationCobol"> <br /></td>
+            </tr>
+            <tr>
+                <td>  <label for="FormationC"> Formation C# </label> </td>
+                <td> <input type="text" id="FormationC" maxlength="60" required asp-for="FormationC"> <br /></td>
+            </tr>
+        </table>
+
+       <button type="submit">Valider</button>
+
+    </form>
+</BODY>
+</HTML>

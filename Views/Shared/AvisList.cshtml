@@ -1,0 +1,51 @@
+﻿@model List<TPLOCAL1.Models.Opinion>
+
+<HTML lang="fr">
+
+<head>
+    <link rel="stylesheet" href="~/resources/Index.css">
+
+    <title>HN - TP LOCAL </title>
+
+</head>
+
+
+<BODY>
+    <header class="header">
+        <!--logo + titre -->
+        <img src="~/resources/GroupeHN.png" class="image"  alt=" GroupeHN" />
+        <h1> Liste des avis</h1>
+    </header>
+
+    <!--bar de navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/Home/Index">Acceuil</a></li>
+            <li><a href="/Home/Index/AvisList">Avis list</a></li>
+        </ul>
+    </nav>
+
+    <table border="1" class="tableau">
+
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Avis</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Opinion in Model)
+            {
+
+                <tr>
+                    <td> @Opinion.LastName </td>
+                    <td> @Opinion.FirstName </td>
+                    <td> @Opinion.OpinionGiven </td>
+             </tr>
+            }
+        </tbody>
+     </table>
+
+</BODY>
+</HTML>

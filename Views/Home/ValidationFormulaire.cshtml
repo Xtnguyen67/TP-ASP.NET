@@ -1,0 +1,108 @@
+﻿@model TPLOCAL1.Controllers.Avis
+
+<HTML lang="fr">
+
+<head>
+    <link rel="stylesheet" href="~/resources/Index.css">
+
+    <title>HN - TP LOCAL </title>
+
+</head>
+
+
+<BODY>
+    <header class="header">
+        <!--logo + titre -->
+        <img src="~/resources/GroupeHN.png" class="image"  alt=" GroupeHN" />
+        <h1> Page de validation</h1>
+    </header>
+
+    <!--bar de navigation -->
+    <nav class="navbar">
+        <ul>
+			<li> <a href="/Home/Index">Acceuil</a></li>
+            <li><a href="/Home/Index/AvisList">Avis list</a></li>
+        </ul>
+    </nav>
+
+    <h4> Votre formulaire à été pris en compte</h4>
+
+
+    <form class="formulaire">
+
+        <table border="1" class="tableau">
+
+            <tr>
+                <th colspan="2"> <h3>Informations personnelles</h3></th>
+            </tr>
+
+            <tr>
+                <td> <label for="Nom"> Nom </label> </td>
+            <td>  @Model.Nom <br /></td>
+            </tr>
+
+            <tr>
+                <td><label for="Prenom"> Prenom </label> </td>
+            <td>  @Model.Prenom <br /></td>
+            </tr>
+
+            <tr>
+                <td> <label for="Sexe"> Sexe </label>  </td>
+                <td>  @Model.Sexe   <br /> </td>
+            </tr>
+            <tr>
+                <td><label for="Adresse"> Adresse </label> </td>
+            <td> @Model.Adresse <br /></td>
+            </tr>
+            <tr>
+                <td> <label for="Code Postal"> Code Postal </label> </td>
+            <td> @Model.CodePostal <br /></td>
+            </tr>
+
+            <tr>
+                <td> <label for="Ville"> Ville </label> </td>
+            <td> @Model.Ville <br /></td>
+            </tr>
+
+            <tr>
+                <td> <label for="Email"> Adresse mail </label>  </td>
+            <td> @Model.Email <br /></td>
+            </tr>
+
+      </table>
+
+        <table border="1" class="tableau">
+            <tr>
+                <th colspan="2"> <h3>Informations formation suivie</h3></th>
+            </tr>
+            <tr>
+                <td> <label for="DateDebFormation"> Date début formation </label> </td>
+                <td> @Model.DateDebFormation <br /></td>
+            </tr>
+
+            <tr>
+                <td>  <label for="FSuivi"> Formation Suivie </label> </td>
+            <td> @Model.FSuivi <br /> </td>
+	        </tr>
+
+      </table>
+
+        <table border="1" class="tableau">
+            <tr>
+                <th colspan="2"> <h3>Avis sur la formation</h3></th>
+            </tr>
+            <tr>
+                <td> <label for="FormationCobol"> Formation Cobol </label> </td>
+                <td> @Model.FormationCobol <br /></td>
+            </tr>
+            <tr>
+                <td>  <label for="FormationC"> Formation C# </label> </td>
+                <td>  @Model.FormationC <br /></td>
+            </tr>
+      </table>
+    </form>
+        
+
+    
+</BODY>
+</HTML>
